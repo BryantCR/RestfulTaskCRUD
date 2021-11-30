@@ -120,10 +120,13 @@ const TaskController = {
                     }
                     task.save(function(err){
                         if(err){
+                            console.log("AHHHHHHHHHHHHHH EROR 1");
                             response.json({message: "Error!", error: err});
                         }
                         else{
-                            response.json({message: "Success!", task: task})
+                            console.log("AHHHHHHHHHHHHHH EROR 2");
+                            console.log("WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW ", task);
+                            response.status(200).json({message: "Success!", task: task})
                         }
                     })
                 }
