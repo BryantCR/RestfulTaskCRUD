@@ -107,7 +107,7 @@ const TaskController = {
                     console.log("HERE", task);
                     response.status( 200 ).json( {message: "Success!", task : task} );
                     if(task.title === request.body.title){
-                        response.json({message: "Error!", error: err});
+                        response.json({message: "Error!"});
                     }
                     if(request.body.title){
                         task.title = request.body.title;
