@@ -145,7 +145,7 @@ export class TaskComponent implements OnInit {
       .subscribe((data:any)=>{
         console.log(data);
       });
-      location.reload();
+      
     }
     
   }
